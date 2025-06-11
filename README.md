@@ -26,5 +26,5 @@
 1. **Клонувати репозиторій:**
 
    ```bash
-   git clone https://github.com/your-username/filmova-baza.git
-   cd lab3
+   git clone https://github.com/Dasha2501/lab2.git
+   cd lab2
