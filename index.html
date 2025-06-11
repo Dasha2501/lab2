@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фільмова База</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Фільмова База</h1>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Пошук за назвою..." aria-label="Пошук фільму">
+
+            <div class="sort-filters">
+                <label for="sortSelect" class="sr-only">Сортувати за:</label>
+                <select id="sortSelect">
+                    <option value="none">Сортувати за...</option>
+                    <option value="name_asc">Назвою (А-Я)</option>
+                    <option value="name_desc">Назвою (Я-А)</option>
+                    <option value="rating_asc">Рейтингом (від низького)</option>
+                    <option value="rating_desc">Рейтингом (від високого)</option>
+                </select>
+
+                <label for="genreSelect" class="sr-only">Фільтр за жанром:</label>
+                <select id="genreSelect">
+                    <option value="all">Всі жанри</option>
+                    </select>
+            </div>
+        </div>
+
+        <div id="movieList" class="movie-list">
+            <p class="loading-message">Завантаження фільмів...</p>
+            </div>
+
+        <div id="errorMessage" class="error-message" style="display: none;">
+            <p>Ой! Сталася помилка при завантаженні даних. Будь ласка, спробуйте пізніше.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
