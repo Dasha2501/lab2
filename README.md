@@ -27,4 +27,4 @@
 
    ```bash
    git clone https://github.com/your-username/filmova-baza.git
-   cd filmova-baza
+   cd lab3
